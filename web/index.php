@@ -34,7 +34,7 @@ $frontend	=   new \App\FrontendController( $app );
 $app->mount( '/' , $frontend() );
 
 $backend	=   new \App\BackendController( $app );
-$app->mount( '/admin' , $backend() );
+$app->mount( '/admin/passwords/' , $backend() );
 
 $app->run();
 //$app['http_cache']->run();

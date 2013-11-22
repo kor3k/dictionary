@@ -2,6 +2,6 @@
 composer.lock
 # Symfony directories
 vendor/*
-*/logs/*
-*/cache/*
+logs/*
+cache/*
 
