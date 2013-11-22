@@ -1,0 +1,26 @@
+{% extends "layout.html.twig" %}
+
+{% block title parent() ~ ' - Admin' %}
+
+{% block javascripts %}
+    <script src="../js/jquery.js"></script>
+{% endblock javascripts %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="../css/master.css" />
+    <noscript>
+        <link rel="stylesheet" href="../css/mobile.css" />
+    </noscript>
+{% endblock stylesheets %}
+
+{% block adapt %}
+    <script src="../js/adapt.js"></script>
+{% endblock adapt %}
+
+
+{% block adapt_config %}
+    {{ parent() }}
+<script>
+    ADAPT_CONFIG.path = '../css/';
+</script>
+{% endblock adapt_config %}
